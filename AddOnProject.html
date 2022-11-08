@@ -1,0 +1,299 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Baking to Relax</title>
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Azeret+Mono&family=Dancing+Script:wght@400;500;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@400;500;600&display=swap"
+      rel="stylesheet" />
+    <style>
+      body {
+        background: linear-gradient(
+          to right,
+          rgb(242, 112, 156),
+          rgb(255, 148, 114)
+        );
+      }
+
+      .theme-button {
+        display: block;
+        margin: 0 auto;
+        border: none;
+        background: rgb(255, 148, 114);
+        font-size: 10px;
+        border-radius: 10px;
+        transition: all 150ms ease-in-out;
+        color: white;
+        padding: 10px;
+        font-family: "Azeret Mono", monospace;
+      }
+
+      .theme-button:hover {
+        color: white;
+        background: #373535;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 50px auto;
+        background: white;
+        padding: 50px;
+        border-radius: 10px;
+      }
+
+      h1 {
+        text-align: center;
+        font-family: "Alfa Slab One", cursive;
+        color: rgb(242, 112, 156);
+      }
+
+      h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        font-family: "Dancing Script", cursive;
+      }
+
+      img {
+        max-width: 100%;
+      }
+
+      .baking-intro-picture {
+        border-radius: 10px;
+        transition: all 150ms ease-in-out;
+      }
+
+      .baking-intro-picture:hover {
+        filter: contrast(80%);
+        transform: scale(1.1);
+      }
+
+      .grid {
+        margin: 20px 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 20px;
+      }
+
+      .grid img {
+        width: 100%;
+        border-radius: 8px;
+        transition: all 150ms ease-in-out;
+      }
+
+      .grid img:hover {
+        transform: scale(2);
+      }
+
+      p {
+        font-size: 18px;
+        line-height: 2;
+        text-align: center;
+        font-family: "Libre Baskerville", serif;
+        padding-top: 20px;
+      }
+
+      .linkText {
+        font-size: 18px;
+        line-height: 28px;
+        text-align: center;
+        color: #000;
+        text-decoration: none;
+      }
+
+      .linkText:hover {
+        color: rgb(255, 148, 114);
+        font-weight: bold;
+        transition: all 200ms ease-in-out;
+      }
+
+      .newsletter {
+        display: block;
+        margin: 0 auto;
+        margin-top: 30px;
+        border: none;
+        background: rgb(255, 148, 114);
+        font-size: 20px;
+        border-radius: 6px;
+        padding: 10px 15px;
+        transition: all 150ms ease-in-out;
+        font-family: "Alfa Slab One", cursive;
+        color: rgb(242, 112, 156);
+      }
+
+      .newsletter:hover {
+        background: rgb(242, 112, 156);
+        cursor: pointer;
+        color: rgb(255, 148, 114);
+      }
+
+      .dark {
+        background: linear-gradient(
+          109.6deg,
+          rgba(0, 0, 0, 0.93) 11.2%,
+          rgb(63, 61, 61) 78.9%
+        );
+        color: white;
+      }
+
+      .dark .container {
+        background: rgba(255, 255, 255, 0.1);
+      }
+
+      .dark .linkText {
+        color: #fff;
+        transition: all 200ms ease-in-out;
+      }
+
+      .dark .linkText:hover {
+        color: rgba(0, 0, 0, 0.93);
+        font-weight: bold;
+      }
+
+      .dark .theme-button {
+        background: gray;
+        color: white;
+        border-color: #121212;
+      }
+
+      .dark .theme-button:hover {
+        color: white;
+        background: rgb(242, 112, 156);
+      }
+
+      .dark button {
+        background: gray;
+        color: white;
+        border-color: #121212;
+      }
+
+      .dark button:hover {
+        color: white;
+        background: rgba(0, 0, 0, 0.93);
+      }
+
+      footer {
+        color: #121212;
+        text-align: center;
+        margin: 20px auto;
+        font-size: 10px;
+        font-family: "Azeret Mono", monospace;
+      }
+
+      .creator {
+        color: #121212;
+        text-decoration: none;
+        transition: all 400ms ease-in-out;
+      }
+
+      .creator:hover {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="theme-button">Change theme</button>
+    <div class="container">
+      <h1>The Art of Baking</h1>
+      <h2>Is baking the hobby for me?</h2>
+      <a
+        href="https://en.wikipedia.org/wiki/Baking"
+        target="_blank">
+        <img
+          src="https://itk-assets.nyc3.cdn.digitaloceanspaces.com/2021/03/overhead-view-of-baking-ingredients-and-a-notepad-royalty-free-image-930086476-1546440806.jpg"
+          alt="Baking Goods"
+          class="baking-intro-picture" />
+      </a>
+      <div class="grid">
+        <img
+          src="https://www.pfionline.com/wp-content/uploads/2020/05/home-bakery-business-productivity-1080x675-e1627750617799.jpeg.webp"
+          alt="Cake" />
+        <img
+          src="https://www.telegraph.co.uk/content/dam/recipes/2020/03/17/date-bake-xlarge_trans_NvBQzQNjv4BqG4d5do5NRVldWRVOcfekFBlBi6L6wPUO9LtkzT9wbr0.jpg?imwidth=640"
+          alt="Plate with cake" />
+        <img
+          src="https://www.bakemag.com/ext/resources/2022/10/17/LaBrea_ThanksgivingLeftoverHasslebacks.jpg?crop=1&height=427&t=1666021492&width=640"
+          alt="Salty bakes" />
+        <img
+          src="https://static.wixstatic.com/media/11062b_4d389d67fda34fbcaee2c3dd3951cec3~mv2.jpg/v1/fill/w_640,h_400,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/11062b_4d389d67fda34fbcaee2c3dd3951cec3~mv2.jpg"
+          alt="Bread" />
+      </div>
+      <p>
+        Baking is a method of preparing food that uses dry heat, typically in an
+        oven, but can also be done in hot ashes, or on hot stones. The most
+        common baked item is bread but many other types of foods can be baked.
+        The art of baking remains a fundamental skill and is important for
+        nutrition, as baked goods, especially bread, are a common and important
+        food, both from an economic and cultural point of view.
+        <br /><br />
+        <a
+          href="https://en.wikipedia.org/wiki/Baking"
+          class="linkText">
+          <strong> Learn more on Wikipedia </strong>
+        </a>
+      </p>
+      <button class="newsletter">Let's start Baking!</button>
+    </div>
+    <footer>
+      Coded with 💕 by
+      <a
+        href="https://www.linkedin.com/in/carolinamacdian"
+        target="_blank"
+        class="creator"
+        >Ana Machado</a
+      >
+    </footer>
+
+    <script>
+      function changeTheme() {
+        let body = document.querySelector("body");
+
+        // body.classList.toggle("dark");
+
+        if (body.classList.contains("dark")) {
+          body.classList.remove("dark");
+        } else {
+          body.classList.add("dark");
+        }
+      }
+
+      let themeButton = document.querySelector(".theme-button");
+      themeButton.addEventListener("click", changeTheme);
+
+      function costumerData() {
+        let name = prompt("What is your name?");
+        let email = prompt(
+          "Hello, " +
+            name +
+            "! What is your e-mail? So we can send you some recepies!"
+        );
+        alert("Thank you " + name + ", you are now part of our Newsletter!");
+      }
+
+      let applyNowButton = document.querySelector(".newsletter");
+
+      applyNowButton.addEventListener("click", costumerData);
+    </script>
+  </body>
+</html>
